@@ -18,10 +18,9 @@ services:
       - 3456:3456
     volumes:
       - ./files:/app/vikunja/files
+      - ./config.yml:/etc/vikunja/config.yml:ro
     depends_on:
       db:
-        condition: service_healthy
-      redis:
         condition: service_healthy
     restart: unless-stopped
   db:
