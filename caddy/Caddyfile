@@ -1,3 +1,7 @@
+{
+    email you@example.com
+}
+
 vikunja.example.com {
     reverse_proxy vikunja:3456
 }
